@@ -17,7 +17,13 @@ const information = {
     },
   ],
 };
-
+// Normal console log
 console.log(information);
-const convertJson = JSON.stringify (information);
+
+// Stringify the object to JSON format
+const convertJson = JSON.stringify(information);
 console.log(convertJson);
+
+// Parse the JSON back to an object
+// const convertBack = JSON.parse(convertJson);
+// console.log(convertBack);
