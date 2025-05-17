@@ -12,16 +12,39 @@
 <body class="bg-green-600">
 
     <div class="flex justify-center items-center flex-col gap-8 mt-10">
-    <h1 class="text-5xl font-bold text-yellow-400">Explore API</h1>
-    <h2 class="text-3xl font-semibold text-black">Learn JSON & Fetch API</h2>
-    <button class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded" onclick="loadData()">Reload</button>
+        <h1 class="text-5xl font-bold text-yellow-400">Explore API</h1>
+        <h2 class="text-3xl font-semibold text-black">Learn JSON & Fetch API</h2>
+
+        <!-- btn     -->
+        <button class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded" onclick="loadData()">Reload</button>
+
+        <!-- btn -->
+        <button id="userBtn"
+            class="bg-red-600 text-yellow-400 font-semibold py-2 px-4 rounded justify-center items-center flex"
+            onclick="loadData()">Reload</button>
+
+
+        <!-- Dynamic Button -->
+        <button id="dynamicBtn"
+            class="bg-white text-black font-semibold py-2 px-4 rounded justify-center items-center flex"
+            onclick="dynamicData()">Dynamic</button>
+
+            <!-- User information showed here -->
+             <div class="ul-container">
+                <ul id="user-list" class="text-2xl font-semibold text-black"></ul>
+             </div>
     </div>
+
+
+
 
 
 
 
     <!-- __________________________ -->
     <script src="./js/fetch.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/dynamic.js"></script>
 </body>
 
 </html>
