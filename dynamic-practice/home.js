@@ -13,5 +13,6 @@ function display(data) {
     ul.appendChild(li);
     console.log(user.name);
   }
-
 }
+
+// -------------------------------------------------
