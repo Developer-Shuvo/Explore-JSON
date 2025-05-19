@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>interval Learning</title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <style>
+        .title {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+            color: #071e94;
+            /* Gray-700 */
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        #counter-display {
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+
+    <div>
+        <h1 class="title">How to Work 'setTimeout' & 'setInterval'</h1>
+    </div>
+
+    <div class="flex justify-center items-center mt-20">
+
+        <div class="bg-yellow-300 rounded-3xl shadow-2xl border-4 border-green-700 flex justify-center items-center px-16">
+            <div>
+            <div id="counter-display">0</div>
+            <h3 class="text-2xl font-semibold text-gray-700">Count Down</h3>
+
+            </div>
+            <img src="./image/stopWatch.png" alt="Stopwatch">
+        </div>
+
+
+    </div>
+    <div class="flex justify-center items-center mt-5 text-4xl font-bold text-yellow-600">
+        <h2>There use SetInterval</h2>
+    </div>
+
+
+
+    <script src="./js/interval.js"></script>
+</body>
+
+</html>
+
+
+
+<!--  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter Example</title>
 </head>
 <body>
-    
+  <h1>Counter: <span id="counter">0</span></h1>
 
+  <script>
+    let count = 0;
+    const counterDisplay = document.getElementById("counter");
 
-    <script src="./interval.js"></script>
+    setInterval(() => {
+      counterDisplay.textContent = count;
+      count++;
+    }, 1000);
+  </script>
 </body>
-</html>
+</html> -->
